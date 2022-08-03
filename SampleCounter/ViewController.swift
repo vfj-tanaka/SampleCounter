@@ -6,12 +6,19 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-class ViewController: UIViewController {
-
+final class ViewController: UIViewController {
+    
+    @IBOutlet private weak var countLabel: UILabel!
+    @IBOutlet private weak var countUpButton: UIButton!
+    @IBOutlet private weak var countDownButton: UIButton!
+    @IBOutlet private weak var countResetButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
 
