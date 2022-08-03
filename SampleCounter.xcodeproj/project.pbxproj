@@ -19,6 +19,7 @@
 		FC3F2235289A66480059E855 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FC3F2234289A66480059E855 /* RxCocoa */; };
 		FC3F2237289A66480059E855 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = FC3F2236289A66480059E855 /* RxRelay */; };
 		FC3F2239289A66480059E855 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FC3F2238289A66480059E855 /* RxSwift */; };
+		FC3F223B289A66C90059E855 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F223A289A66C90059E855 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		FC3F2220289A53A60059E855 /* SampleCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3F2224289A53A60059E855 /* SampleCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCounterUITests.swift; sourceTree = "<group>"; };
 		FC3F2226289A53A60059E855 /* SampleCounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FC3F223A289A66C90059E855 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				FC3F2203289A53A40059E855 /* AppDelegate.swift */,
 				FC3F2205289A53A40059E855 /* SceneDelegate.swift */,
 				FC3F2207289A53A40059E855 /* ViewController.swift */,
+				FC3F223A289A66C90059E855 /* ViewModel.swift */,
 				FC3F2209289A53A40059E855 /* Main.storyboard */,
 				FC3F220C289A53A60059E855 /* Assets.xcassets */,
 				FC3F220E289A53A60059E855 /* LaunchScreen.storyboard */,
@@ -274,6 +277,7 @@
 			files = (
 				FC3F2208289A53A40059E855 /* ViewController.swift in Sources */,
 				FC3F2204289A53A40059E855 /* AppDelegate.swift in Sources */,
+				FC3F223B289A66C90059E855 /* ViewModel.swift in Sources */,
 				FC3F2206289A53A40059E855 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,6 +455,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D2LPL47T23;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SampleCounter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -478,6 +483,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D2LPL47T23;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SampleCounter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
