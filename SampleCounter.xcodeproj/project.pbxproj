@@ -16,6 +16,10 @@
 		FC3F221B289A53A60059E855 /* SampleCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F221A289A53A60059E855 /* SampleCounterTests.swift */; };
 		FC3F2225289A53A60059E855 /* SampleCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2224289A53A60059E855 /* SampleCounterUITests.swift */; };
 		FC3F2227289A53A60059E855 /* SampleCounterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2226289A53A60059E855 /* SampleCounterUITestsLaunchTests.swift */; };
+		FC3F2235289A66480059E855 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FC3F2234289A66480059E855 /* RxCocoa */; };
+		FC3F2237289A66480059E855 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = FC3F2236289A66480059E855 /* RxRelay */; };
+		FC3F2239289A66480059E855 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FC3F2238289A66480059E855 /* RxSwift */; };
+		FC3F223B289A66C90059E855 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F223A289A66C90059E855 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,7 @@
 		FC3F2220289A53A60059E855 /* SampleCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3F2224289A53A60059E855 /* SampleCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCounterUITests.swift; sourceTree = "<group>"; };
 		FC3F2226289A53A60059E855 /* SampleCounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FC3F223A289A66C90059E855 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC3F2239289A66480059E855 /* RxSwift in Frameworks */,
+				FC3F2237289A66480059E855 /* RxRelay in Frameworks */,
+				FC3F2235289A66480059E855 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +110,7 @@
 				FC3F2203289A53A40059E855 /* AppDelegate.swift */,
 				FC3F2205289A53A40059E855 /* SceneDelegate.swift */,
 				FC3F2207289A53A40059E855 /* ViewController.swift */,
+				FC3F223A289A66C90059E855 /* ViewModel.swift */,
 				FC3F2209289A53A40059E855 /* Main.storyboard */,
 				FC3F220C289A53A60059E855 /* Assets.xcassets */,
 				FC3F220E289A53A60059E855 /* LaunchScreen.storyboard */,
@@ -143,6 +152,11 @@
 			dependencies = (
 			);
 			name = SampleCounter;
+			packageProductDependencies = (
+				FC3F2234289A66480059E855 /* RxCocoa */,
+				FC3F2236289A66480059E855 /* RxRelay */,
+				FC3F2238289A66480059E855 /* RxSwift */,
+			);
 			productName = SampleCounter;
 			productReference = FC3F2200289A53A40059E855 /* SampleCounter.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +229,9 @@
 				Base,
 			);
 			mainGroup = FC3F21F7289A53A40059E855;
+			packageReferences = (
+				FC3F2233289A66480059E855 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = FC3F2201289A53A40059E855 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +277,7 @@
 			files = (
 				FC3F2208289A53A40059E855 /* ViewController.swift in Sources */,
 				FC3F2204289A53A40059E855 /* AppDelegate.swift in Sources */,
+				FC3F223B289A66C90059E855 /* ViewModel.swift in Sources */,
 				FC3F2206289A53A40059E855 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +455,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D2LPL47T23;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SampleCounter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -464,6 +483,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D2LPL47T23;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SampleCounter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -596,6 +616,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FC3F2233289A66480059E855 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FC3F2234289A66480059E855 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC3F2233289A66480059E855 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		FC3F2236289A66480059E855 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC3F2233289A66480059E855 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		FC3F2238289A66480059E855 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC3F2233289A66480059E855 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FC3F21F8289A53A40059E855 /* Project object */;
 }
